@@ -15,12 +15,12 @@ O implicit de maneira geral funciona da mesma forma. Quando definimos algo como 
 
 Confuso? A baixo iremos ver na prática como o implicit funciona:
 
-# Classes implícitas
+## Classes implícitas
 
 O primeiro tipo de implicit que iremos aprender é o implicit de classe. Com ele conseguimos de maneira fácil adicionar ou modificar o comportamento de uma classe, seja em seus atributos ou métodos. 
 <!--more-->
 
-### Adicionando um método na classe String
+#### Adicionando um método na classe String
 
 {% highlight scala %}
 implicit class MyString(s: String) {
@@ -57,7 +57,7 @@ val s = "Olá"
 s.meu_metodo
 {% endhighlight %}
 
-# Métodos implícitos
+## Métodos implícitos
 
 Antes do Scala 2.10, não existia o implicit class. Porém podemos nos beneficiar do implicit, mas com o implicit def.
 
@@ -83,7 +83,7 @@ Agora sim! O que aconteceu foi o seguinte: Ao tentar atribuir um valor do tipo D
 
 Entenda da seguinte maneira. Ao tentarmos adicionar uma variavel do tipo double em uma do tipo int, um bub, porem o scala primeiro verifica se há alguma vacina(correção) para caso tenhamos esse bug.
 
-### Adicionando métodos sem implicit class
+#### Adicionando métodos sem implicit class
 
 {% highlight scala %}
 class NewString(val s: String) {
@@ -96,7 +96,7 @@ val a = "Diego"
 a.meu_metodo
 {% endhighlight %}
 
-# Parâmetros implícitos
+## Parâmetros implícitos
 
 Permite referenciar um valor para um parâmetro do método em questão. Caso seja passado algum valor para o parametro, este sempre terá prioridade sobre o implicit.
 
@@ -121,7 +121,7 @@ my_name // Não da mais erro!
 
 Agora podemos chamar nossa função __my_name__ sem nenhum parâmetro!
 
-### Mas porque funcionou agora?
+#### Mas porque funcionou agora?
 
 Ao definir o parâmetro como implícito, ele nos permite definir fora de seu escopo, variáveis implícitas também. Como o parâmetro é do tipo String, qualquer variável do tipo String que definírmos como implicit, irá servir de valor default para o parâmetro, caso não seja passado nenhum valor no momento da chamada do método.
 
