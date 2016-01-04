@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Diego Nogueira
+email:       diegoalvareznogueira@gmail.com
+author:      Diego Nogueira
+description: "Ruby on rails, Scala, linux, e etc."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://diegonogueira.com.br"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -20,7 +20,7 @@ ajaxify_contact_form: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: diegonogueira
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
@@ -29,12 +29,12 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
-bitbucket_username:
+github_username: diegonogueira
+bitbucket_username: diegonogueira
 stackoverflow_id:
-twitter_username:
-google_plus_id:
-linkedin_username:
+twitter_username: nogueiradiego
+google_plus_id: 104313017470857330466
+linkedin_username: AAIAAAeZjcgBmriwapU4sUibs65Hc2zvMN4AAbQ
 angellist_username:
 medium_id:
 bitcoin_url:
