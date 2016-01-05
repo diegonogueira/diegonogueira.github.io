@@ -1,19 +1,16 @@
 ---
 layout: page
-title: About Pixyll
-permalink: /about/
+title: Sobre
+permalink: /sobre/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+Olá!
+Meu nome é Diego Alvarez Nogueira. Trabalho com desenvolvimento web desde 2006, onde iniciei com VB, PHP, ASP, C#, e agora Ruby on Rails.
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+Trabalho atualmente no <a href="http://v2v.net">v2v.net</a> com desenvolvimento Ruby on Rails. 
 
-Thanks to the following:
+Criei este blog, com o objetivo de compartilhar conhecimentos. Espero que ajudem de alguma forma.
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Type Scale](http://type-scale.com/)
+Atenciosamente,
+
+Diego Nogueira
