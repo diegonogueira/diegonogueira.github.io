@@ -17,9 +17,9 @@ private val name: String = "Diego"
 {% endhighlight %}
 
 Essa é a forma completa de declaração, porém não precisamos declarar sempre a forma completa, podemos omitir alguns parâmetros. Mas antes disso iremos entender cada parte da declaração completa.
-### __1) Escopo__
+### 1) Escopo
 Escopo de acesso da sua variável, podendo ser:
-####__a) public__
+#### a) public
 Será uma variável pública, ou seja, será acessível dentro de sua própria classe, instancias dessa classe e subclasses. Esse é o escopo default na declaração de variável no Scala, então podemos omiti-lo.
 <!--more-->
 {% highlight scala %}
@@ -56,7 +56,7 @@ Pontos a observar:
 * Uma instância de __User__ tem acesso ao __get/set__ gerado pelo Scala
 * Uma instância de __Employee__, que herda de __User__, também tem acesso ao __get/set__ gerado pelo Scala
 
-####__b) private__
+#### b) private
 
 Será uma variável privada, ou seja, somente os métodos da classe em questão terão acesso a ela, nem uma subclasse terá acesso.
 
@@ -88,7 +88,7 @@ Pontos a observar:
 * A classe Employee, que herda de User, NÃO tem acesso ao __get/set__ gerado pelo Scala
 * Uma instância de __Employee__, que herda de __User__, também NÃO tem acesso ao __get/set__ gerado pelo Scala
 
-####__c) protected__
+#### c) protected
 
 Será uma variável protegida, ou seja, somente poderá ser acessada em sua própria classe ou subclasse. Suas instancias assim como o private não terão acesso a mesma.
 
@@ -129,11 +129,11 @@ Pontos a observar:
 * A classe Employee, que herda de User, tem acesso ao __get/set__ gerado pelo Scala
 * Uma instância de __Employee__, que herda de __User__, NÃO tem acesso ao __get/set__ gerado pelo Scala
 
-### __2) Tipo de acesso__
+### 2) Tipo de acesso
 
 O tipo de acesso definimos se nossa variável é mutável ou imutável, ou seja, quando imutável, temos seu comportamento como uma constante.
 
-####__a) val__
+#### a) val
 Utilizado para deixar a variável imutável. Uma vez o valor definido, não poderá ser mais alterado.
 
 {% highlight scala %}
@@ -142,7 +142,7 @@ name = "Nogueira" // Erro
 println(name)
 {% endhighlight %}
 
-####__b) var__
+#### b) var
 
 Utilizado para deixar a variável mutável. Podemos definir e re-definir a qualquer momento o valor da variável.
 
@@ -152,14 +152,14 @@ name = "Nogueira"
 println(name)
 {% endhighlight %}
 
-####__Qual devemos utilizar?__
+#### Qual devemos utilizar?
 Devemos tentar utilizar ao máximo o __val__, assim nos beneficiaremos da programação funcional, que é um dos pontos fortes da linguagem, além de ser extremamente recomendado pela comunidade do Scala.
 
-### __3) Nome da variável__
+### 3) Nome da variável
 
 Nome da variável em questão. Devemos ficar atentos aos nomes das variáveis em nossa aplicação, utilize sempre nomes façam sentido para as quais as variáveis foram criadas. Caso o nome de uma variável seja muito grande, você pode abreviar, mas sempre mantendo a coesão.
 
-### __4) Tipo da variável__
+### 4) Tipo da variável
 
 Assim como em outras linguagens, o Scala possui todos os tipos padrões: String, Int, Double, Boolean entre muitos outros. Além do benefício de podermos utilizar variáveis do Java:
 
@@ -193,11 +193,11 @@ val closed = true
 closed.getClass
 {% endhighlight %}
 
-### __4) Valor padrão__
+### 4) Valor padrão
 
 Por último, podemos informar algum valor padrão para nossa variável. Note que caso a variável seja declarada utilizando o __val__, esse será seu valor único, pois variáveis declaradas com val não podem ser alteradas.
 
-####__Declaração múltipla__
+#### Declaração múltipla
 
 Podemos definir várias variáveis ao mesmo tempo e informando um valor padrão pra elas também.
 
@@ -205,7 +205,7 @@ Podemos definir várias variáveis ao mesmo tempo e informando um valor padrão 
 val variable1, variable2 = 100
 {% endhighlight %}
 
-####__Lazy (variável preguiçosa)__
+#### Lazy (variável preguiçosa)
 
 Um recurso bastante interessante é o lazy, quando informado na declaração de uma variável, faz com que o valor padrão somente seja executado no momento da primeira chamada a variável. Vamos ver como funciona:
 
