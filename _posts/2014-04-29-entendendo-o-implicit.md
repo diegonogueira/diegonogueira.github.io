@@ -2,7 +2,7 @@
 layout:     post
 title:      Entendendo o Implicit
 date:       2014-04-29 12:00:00
-categories: Scala
+tags:       [scala]
 ---
 
 Ao nos depararmos com __implicit__ a primeira vez, pode ser algo um pouco confuso. Vou tentar explicar e exemplificar o uso de implicits.
