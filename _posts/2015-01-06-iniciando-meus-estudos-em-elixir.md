@@ -2,7 +2,6 @@
 layout:     post
 title:      Iniciando meus estudos em elixir
 date:       2015-01-06 12:00:00
-draft:      true
 tags:       [elixir, phoenix]
 ---
 
