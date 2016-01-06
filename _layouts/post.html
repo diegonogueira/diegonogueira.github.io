@@ -13,14 +13,7 @@ layout: default
   {% if page.update_date %}
     <span class="post-meta">Updated: {{ page.update_date | date: site.date_format }}</span><br>
   {% endif %}
-  <span class="post-meta small">
-  {% if page.minutes %}
-    {{ page.minutes }} minute read
-  {% else %}
-    {{ minutes }} minute read
-  {% endif %}
-  </span>
-  
+
   {% assign post = page %}
     {% if post.tags.size > 0 %}
       {% capture tags_content %}Tags: {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}{% endcapture %}
@@ -39,7 +32,7 @@ layout: default
       {% assign tags_content = '' %}
   {% endif %}
 
-  <span class="post-meta small" id="post-meta">{{ tags_content }}</span>
+  <div class="post-meta small" id="post-meta">{{ tags_content }}</div>
 </div>
 
 <article class="post-content">
