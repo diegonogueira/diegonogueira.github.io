@@ -2,7 +2,7 @@
 layout:     post
 title:      Declarando variáveis no Scala
 date:       2014-04-09 12:00:00
-categories: Scala
+tags:       [scala]
 ---
 
 Vamos colocar a mão na massa agora! Como primeiro assunto, iremos aprender como funciona a declaração de variáveis no Scala. Entre no console do Scala e vamos estudar!
