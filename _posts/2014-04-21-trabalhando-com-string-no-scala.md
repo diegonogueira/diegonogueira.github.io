@@ -2,7 +2,7 @@
 layout:     post
 title:      Trabalhando com String no Scala
 date:       2014-04-21 12:00:00
-categories: Scala
+tags:       [scala]
 ---
 
 Neste post iremos aprender a trabalhar um pouco com String no Scala.
