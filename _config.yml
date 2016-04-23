@@ -6,7 +6,7 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Hyde
+title:            Diego Nogueira
 tagline:          'A Jekyll theme'
 description:      'Ruby on Rails, Elixir and Phoenix...'
 url:              http://diegonogueira.com.br/
